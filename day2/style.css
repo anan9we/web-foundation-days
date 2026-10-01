@@ -1,0 +1,175 @@
+/* 1. Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Base page styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* 3. Header */
+header {
+  background-color: #263445;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+header p {
+  margin-bottom: 20px;
+}
+
+/* 4. Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 6px 10px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #40536b;
+  border-radius: 4px;
+}
+
+/* 5. Main content */
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* 6. Section cards */
+section {
+  background-color: white;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  margin-bottom: 15px;
+}
+
+/* 7. Features grid */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  list-style: none;
+}
+
+.features li {
+  background-color: #eef1f5;
+  padding: 18px;
+  border-radius: 6px;
+}
+
+/* 8. Shortcuts table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #263445;
+  color: white;
+}
+
+/* 9. Feedback form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  font: inherit;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* 10. Buttons */
+button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 4px;
+  background-color: #263445;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #40536b;
+  transform: translateY(-2px);
+}
+
+/* 11. Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+/* 12. Mobile styles */
+@media (max-width: 600px) {
+  header {
+    padding: 20px 15px;
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  main {
+    margin: 20px auto;
+    padding: 0 12px;
+  }
+
+  section {
+    padding: 18px;
+  }
+
+  nav {
+    gap: 10px;
+  }
+}
