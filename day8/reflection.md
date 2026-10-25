@@ -1,0 +1,7 @@
+# Day 8 Reflection
+
+The most difficult concept in this course was designing a system that can handle high traffic without sacrificing correctness. It is relatively easy to describe an API or draw an architecture diagram, but it is harder to understand what happens when many requests arrive at the same time. For example, in TicketHub, two customers could attempt to reserve the same seat simultaneously. I overcame this by breaking the problem into smaller parts, studying how database transactions, row-level locks, and unique constraints work together, and considering what happens when a request fails halfway through.
+
+Based on feedback from my capstone, I would improve the architecture presentation and explain my design decisions more clearly. I would add more realistic traffic estimates, make the relationships between components easier to follow, and practise explaining why I chose particular technologies. I would also improve my demonstrations by testing important features and error cases beforehand, rather than relying only on the successful path.
+
+Next, I want to learn Node.js and Express so I can build real backend APIs instead of relying on simulated API responses. I also want to practise using PostgreSQL with transactions and constraints, then connect a frontend to a persistent database. This would help me turn my system-design documents into working applications and better understand how the design decisions I make affect real software.
